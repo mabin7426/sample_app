@@ -12,6 +12,7 @@
 		<div class = "container">
 			<%= flash.each do |key, value| %>
  				<%= content_tag(:div, value, class: "alert alert-#{key}") %>
+ 				<!-- WHY IS THIS STUPID THING SHOWING {} ALL THE TIME?!??!?! -->
 <!-- 				<div class="alert alert-<%= key %>"></div> -->
 			<% end %>
 			<%= yield %>
